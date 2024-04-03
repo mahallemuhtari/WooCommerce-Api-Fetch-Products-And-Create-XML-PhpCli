@@ -45,7 +45,7 @@ function fetchProductsAndCreateXML($total_products, $site_link, $username, $pass
             // <product> single
             foreach ($product_data as $product) {
                 // Terminal Msg
-                echo $products_count . "- <3 SynexExporter - Added This Product : {$product['name']}\n";
+                echo $products_count . "- <3 Exporter - Added This Product : {$product['name']}\n";
 
                 //Added Product Xml Element
                 $product_node = $xml->addChild('product');
@@ -168,6 +168,5 @@ $xml_file = 'products'.time().rand(1,1548).'.xml';
 
 
 fetchProductsAndCreateXML($total_products, $site_link, $username, $password, $xml_file);
-);
 
 ?>
